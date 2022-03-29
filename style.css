@@ -1,0 +1,47 @@
+.container1, .container2, .container3{
+  display: flex;
+}
+.container1 div{
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: grey;
+  animation-name: anim;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-timing-function: linear
+}
+.container2 div{
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: black;
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: linear
+}
+.container3 div{
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: orange;
+  animation-name: anim;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-timing-function: linear
+}
+@keyframes anim {
+  0%{
+    opacity: 0;
+    transform: translateX(20%) translateY(20%);
+  }
+  50%{
+    opacity: 0.5;
+    transform: translateX(10%) translateY(10%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
